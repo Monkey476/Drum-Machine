@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.container {
+    text-align: center;
+}
+
+.drum-pads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.drum-pad {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(40, 121, 78);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.drum-pad:hover {
+    background-color: rgb(33, 101, 79);
+    transition: 0.2s;
+}
+
+#display {
+    margin-top: 40px;
+    font-size: 20px;
+    color: black;
+}
